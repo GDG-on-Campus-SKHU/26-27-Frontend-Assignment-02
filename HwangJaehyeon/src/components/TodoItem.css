@@ -1,0 +1,42 @@
+.item,
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.toggleButton {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.completed .text {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.completed .toggleButton {
+  color: white;
+  background: #6366f1;
+}
+
+.actions {
+  flex-shrink: 0;
+}
+
+.deleteButton {
+  color: #c44;
+}
