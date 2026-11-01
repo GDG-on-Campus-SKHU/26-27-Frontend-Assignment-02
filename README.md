@@ -1,75 +1,35 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+=======
+# 제출 방법
 
-Currently, two official plugins are available:
+해당 레포지토리를 fork합니다. (우측 상단에 있습니다.) <br />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+fork한 개인 레포를 본인 터미널에 git clone 하여 불러온 후 VSCode로 열어서 <br />
+그 안에 과제로 제출할 본인 Vite 프로젝트를 설치해 생성합니다. `npm create vite@latest` <br />
 
-## React Compiler
+- 세션 때처럼 설치 명령어 입력 시 끝에 `.` 안됩니다. 본인 프로젝트 폴더를 따로 생성하셔야 해서입니다. <br />
+- 이름을 묻는 절차에서 본인 영문이름으로 설정합니다. <br />
+- package name 묻는 절차도 나오는데 그대로 Enter 치시면 됩니다. <br />
+- 화면 실행 시 `cd 본인 폴더` 로 이동하여 실행하셔야 됩니다. <br />
+- 용량이 큰 `node_modules` 폴더는 신경쓰시지 않아도 됩니다. <br />
+  `.gitignore` 파일에 가보시면 기본으로 설정되어있어 Github에 올라가지 않습니다. <br />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+구현이 다 끝나면 커밋하고 푸쉬합니다. <br />
 
-## Expanding the ESLint configuration
+다시 Github으로 가서 fork한 개인레포에서 `new pull request` 을 눌러 레포를 생성합니다. <br />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+아래 사진처럼 되어있으면 ok <br />
+<img width="2558" height="378" alt="image" src="https://github.com/user-attachments/assets/8dee0340-a5c6-49c3-b92b-7e1696007733" />
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# PR 요구사항
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Add a title : 26-27-Frontend-Assignment-01\_본인이름 <br />
+Reviewers에서 김다은 코어 아이디를 설정해주세요. (`rlaekdms13`) <br />
+설명도 가능한 상세히 적어주세요 <br />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+pr 날리면 제출 완료
 
-```
+# 제출 기한
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+11월 1일 일요일 오후 11시 59분까지 제출
+>>>>>>> b9b664d9b1591c3924fa836dc78553ab8ba885cc
