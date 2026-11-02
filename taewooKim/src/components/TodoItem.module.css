@@ -1,0 +1,44 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.check {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border: 2px solid #4a7dff;
+  border-radius: 6px;
+  background-color: white;
+  color: #4a7dff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text {
+  flex: 1;
+  word-break: break-all;
+}
+
+.done {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.button {
+  padding: 4px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.delete {
+  border-color: #ff8a8a;
+  color: #e5484d;
+}
